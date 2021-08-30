@@ -1,3 +1,4 @@
+/**parei na parte sobre gradiente*/
 /*Background: #202239 Azul: #1F65C2 Laranja: #D45F25 Branco: #F2F2F2 */
 *{ text-align: center;Background: #202239 ;color: #F2F2F2;
     margin: 0; padding: 0;
@@ -13,6 +14,7 @@ h1{background-color: rgba(0,0,0,0);}
 h2{background-color: rgba(0,0,0,0);}
 h3{background-color: rgba(0,0,0,0);}
 h4{background-color: rgba(0,0,0,0);}
+span{background-color: rgba(0,0,0,0);}
 
 header{ height: 200px;}
 header img {height: 100%; float: left;}
@@ -32,7 +34,38 @@ background-position-x: center;background-position-y: center; background-size: au
 .laranja90{background-color: #D45F25;height: 90%;border-radius: 5%;margin: 5px 25px ;}
 .laranja{background-color: #D45F25;height: 95%;border-radius: 5%;margin: 5px 25px ;}
 .azul{background-color: #1F65C2;height: 95%;border-radius: 5%;margin: 5px 25px ;}
-.atracoes{grid-area: a;}
+.atracoes{grid-area: a;
+    height: 95vh; width: 100%-5px;
+    display: flex;        
+    justify-content: center;align-items: center;
+}
+
+.atracoes .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background:cornsilk; 
+    padding: 32px 16px;
+    border-radius: 8px;
+    max-height: 254px;
+    margin-left: 32px;
+}
+.atracoes .card:first-child {margin-left: 0;
+}
+.atracoes .card button{
+    background-color: #D45F25 ;
+    padding: 0.5rem 1rem; 
+    text-transform: uppercase;
+    border-radius: 32px; border:0;
+    cursor: pointer;
+    /*font-size: 80%; font-weight: 500;*/
+    
+}
+
+.atracoes .card img{ width: 100%; }
+.atracoes .card .icon{ width: 200px; height: 400px;}
+
 .social{grid-area: s;}
 .eventos{grid-area: e;}
 .conheca{grid-area: c;}
