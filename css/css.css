@@ -1,0 +1,52 @@
+/*Background: #202239 Azul: #1F65C2 Laranja: #D45F25 Branco: #F2F2F2 */
+*{ background-color: #202239 ; margin: 0;padding: 0;color: white;box-sizing:border-box;}
+.cxpesq{float:right;     background: black;    height: 40px;    border-radius: 40px; padding: 10px;}
+
+.botaopesq{
+    float: right; width: 40px;height: 40px; border-radius: 50%; background: #353b48;
+    display: flex;    justify-content: center;align-items: center; transition: 2s; }
+
+.pesq-txt{
+    border:none; background: none; outline: none; float: left;padding: 0;color: white;
+    font-size: 16px; transition: 0.4s; line-height: 40px; width: 0px;}
+
+.cxpesq:hover > .pesq-txt {    width: 240px; padding: 0 6px;}
+.cxpesq:hover > .botaopesq {    background: white;}
+
+.caixa{
+    display: grid; grid-template-areas: 
+    "h h" "m m" "c c" "f f";
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 70vh 70vh 10vh;
+/*place-items: center; */   
+}
+.logo{width: auto; height: 100%; float: left;}
+
+header{ height: 100%;grid-area: h;}
+
+header ul{list-style: none; height: 100%; 
+    text-align: center;line-height: 200px;}
+header ul li{display: inline; font-size: xx-large;}
+
+main{background: #1F65C2; grid-area: m;}
+
+footer{background: rgb(77, 70, 70);height: 15vh;grid-area: f;}
+
+
+#items-wrapper{ width: 100vw;}
+#items{display: flex; overflow-x: auto;
+        scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch;}
+.item{
+    flex: none; scroll-snap-align: start;
+    width: 100%; height: 400px;
+}
+img{ width: 100%;height: 100%; object-fit: cover;}
+
+
+
+
+
+
+
+
+

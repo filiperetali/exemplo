@@ -1,0 +1,57 @@
+/*Background: #202239 Azul: #1F65C2 Laranja: #D45F25 Branco: #F2F2F2 */
+*{ background-color: #202239 ; margin: 0;padding: 0;color: white;}
+.cxpesq{float:right;     background: black;    height: 40px;    border-radius: 40px; padding: 10px;}
+
+.botaopesq{
+    float: right; width: 40px;height: 40px; border-radius: 50%; background: #353b48;
+    display: flex;    justify-content: center;align-items: center; transition: 2s; }
+
+.pesq-txt{
+    border:none; background: none; outline: none; float: left;padding: 0;color: white;
+    font-size: 16px; transition: 0.4s; line-height: 40px; width: 0px;}
+
+.cxpesq:hover > .pesq-txt {    width: 240px; padding: 0 6px;}
+.cxpesq:hover > .botaopesq {    background: white;}
+
+.caixa{
+    display: grid; grid-template-areas: 
+    "h h" "m m" "f f";
+    grid-template-columns: 1fr;
+    grid-template-rows: 30vh 60vh 10vh;
+    
+}
+.logo{width: auto; height: 80%; float: left;}
+
+header{ height: 100%;grid-area: h;justify-content: center;}
+
+header ul{list-style: none; clear: both; text-align: center;}
+header ul li{display: inline;}
+
+main{background: #1F65C2;height: 65vh; grid-area: m;}
+
+footer{background: brown;height: 15vh;grid-area: f;}
+@keyframes animacao{ 
+    25%{
+        opacity: 1;
+        transform:scale(1.1,1.1);    
+    }
+    50%{ opacity: 0;}
+}
+.galeria{ width: auto; height: 100%; position: relative;
+overflow: hidden; background-color: chartreuse; }
+.foto:nth-child(1){
+    
+}
+.foto:nth-child(2){
+    animation-delay: 5s;
+}
+.foto:nth-child(3){
+    animation-delay: 10s;
+}
+.foto{
+ /*   position: absolute;*/
+    opacity: 0;
+    animation-name: animacao;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
