@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias - Imagens e vídeos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>        Trabalhando com imagens    </h1>
+    <h2>Vamos exibir imagens diferentes conforme o tamanho da tela</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro minima odio aliquid harum ipsa eos mollitia tempora cupiditate incidunt, culpa repudiandae hic quibusdam vel placeat earum? Delectus totam veritatis consequatur!</p>
+    
+    <img class="centro" src="midias/ETEC.png" alt="Imagem flexível horizontal">
+    <picture>
+        <source media="(max-width:750px" srcset="midias/ETEC.png" type="image/png">
+        <source media="(max-width:1050px" srcset="midias/ETECM.png" type="image/png">
+        <img src="midias/ETECG.png" alt="Imagem flexível horizontal">
+    </picture>
+
+    <h1> Reproduzindo audio</h1>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midias/nine.mp3" type="audio/mpeg">
+        <p>infelizmente não deu
+            <a href="midias/nine.mp3">Clique aqui para download.</a>
+        </p>
+    </audio>
+</body>
+</html>
